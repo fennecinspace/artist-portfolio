@@ -1,0 +1,381 @@
+@font-face {
+    font-family: Staatliches;
+    src: url("../fonts/Staatliches-Regular.ttf");
+}  
+
+* {
+    box-sizing: border-box;
+    font-family: 'Staatliches', 'Open Sans';
+    transition: 0.3s;
+}
+
+*:hover {
+    transition: 0.3s;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    /* font-weight: 800; */
+    letter-spacing: 1px;
+    color: #2c2b30;
+    overflow: hidden;
+}
+
+#header-left {
+    background-color: #fcc49d;
+    height: 100%;
+}
+
+#header-right {
+    background-color: #39383e;
+    height: 100%;
+    position: relative;
+}
+
+#header-left > div:last-child {
+    margin-left: 12vw;
+    width: max-content;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+#header-left nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 50px;
+    width: max-content;
+    padding: 40px;
+    font-size: 2.3vw;
+}
+
+#header-left nav a, #header-left nav a:visited, #header-left nav a:active {
+    color: #2c2b30;
+}
+
+#header-left nav a:hover {
+    color: #000000;
+    transform: translateY(-10px);
+}
+
+#main_title {
+    font-size: 7vw;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.main_underscore {
+    width: 4vw;
+    height: 1vw;
+    margin-left: 2px;
+    border-radius: 2px;
+    background-color: #2c2b30;
+}
+
+.main_desc {
+    padding-top: 10px;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.social {
+    display: grid;
+    grid-gap: 15px;
+    grid-auto-flow: column;
+    width: max-content;
+    margin-top: 40px;
+    margin-left: 4px;
+}
+
+.social a {
+    display: block;
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.social a:hover {
+    filter: brightness(0.1);
+}
+
+.social a.instagram {
+    background: url("../images/ig.svg") no-repeat center/2.5vw;
+}
+
+.social a.facebook {
+    background: url("../images/fb.svg") no-repeat center/2.5vw;
+}
+
+.social a.linkedin {
+    background: url("../images/in.svg") no-repeat center/2.5vw;
+}
+
+#header-right img {
+    position: absolute;
+    bottom: 0;
+    left: -15vw;
+    width: 68vh;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.404));
+}
+
+/* section {
+    padding: 50px;
+} */
+
+#projet {
+    /* height: 100%; */
+    width: 100%;
+    background: #2c2b30;
+}
+
+.section-head {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#projet .section-head .main_title {
+    color: #fff;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#projet .section-head .main_title div:last-child {
+    width: 6vw;
+    height: 1vw;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.section-head > img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.section-head > .main_title > img {
+    width: 18vw;
+}
+
+.section-content {
+    padding: 7vw;
+    padding-bottom: 10vw;
+}
+
+.timeline {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 20vw max-content 40vw;
+    /* justify-items: center; */
+    grid-gap: 3vw;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.timeline-item > img {
+    width: 100%;
+    height: auto;
+    margin-top: calc( 2.5vw + 1vw + 1vw); /* MARGIN-TOP = */
+}
+
+.timeline-separator {
+    display: grid;
+    grid-gap: 1vw; /* MARGIN-TOP + */
+    grid-template-rows: max-content auto;
+}
+
+.timeline-separator > div:first-child {
+    width: 2.5vw; /* MARGIN-TOP */
+    height: 2.5vw;
+    background: #fcc49d;
+    border-radius: 50%;
+}
+
+.timeline-separator > div:last-child {
+    border-left: 4px dashed #fcc49d;
+    margin: 0 auto;
+    width: 0;
+}
+
+.timeline-item.last-item .timeline-separator > div:last-child {
+    border: none;
+}
+
+.timeline-img-filler {
+    height: 5vw;
+}
+
+.timeline-item-title {
+    color: #fcc49d;
+    text-align: left;
+    font-size: 3vw;
+    position: relative;
+    top: -0.5vw;
+}
+
+#musique {
+    width: 100%;
+    background: #fcc49d;
+}
+
+#musique .main_title, #youtube .main_title {
+    padding-top: 7vw;
+}
+
+#musique .section-head .main_title div:last-child {
+    width: 6vw;
+    height: 1vw;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #8095ff;
+}
+
+
+#musique .section-head .main_title {
+    color: #8095ff;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#youtube {
+    width: 100%;
+    background: #ff3c3c;
+}
+
+#youtube .section-head .main_title div:last-child {
+    width: 6vw;
+    height: 1vw;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #000;
+}
+
+#youtube .section-head .main_title {
+    color: #000;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#youtube .section-head .main_title div:last-child {
+    width: 6vw;
+    height: 1vw;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #000;
+}
+
+#youtube .section-content {
+    padding-bottom: 6vw;
+}
+
+#youtube .section-head img:first-child {
+    padding-right: 2vw;
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3vw;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.see_more, .see_more:visited, .see_more:active {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 2vw;
+    margin-top: 4vw;
+}
+
+
+.see_more:hover > span {
+    padding-left: 0.5vw;
+}
+
+
+#livres {
+    width: 100%;
+    background: #39383e;
+}
+
+#livres .main_title, #youtube .main_title {
+    padding-top: 4vw;
+}
+
+#livres > .section-head > img {
+    padding-top: 3vw;
+}
+
+#livres .section-head .main_title div:last-child {
+    width: 6vw;
+    height: 1vw;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+
+#livres .section-head .main_title {
+    color: #ffffff;
+    font-size: 5vw;
+    text-align: center;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#livres .section-content {
+    display: grid;
+    justify-content: center;
+}
+
+#livres .section-content img {
+    width: 20vw;
+}
