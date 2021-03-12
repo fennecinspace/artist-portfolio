@@ -392,10 +392,14 @@ footer {
     width: 20vw;
 }
 
-.timeline-item-content > div:last-child {
+.timeline-item-content-desc {
     font-size: 2vw;
     color: #dedede;
     padding-bottom: 3vw;
+}
+
+.timeline-item-content .video-responsive {
+    margin-bottom: 30px;
 }
 
 .role_list {

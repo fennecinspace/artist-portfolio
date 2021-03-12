@@ -97,7 +97,7 @@
         grid-gap: 10px;
     }
 
-    .timeline-item-content > div:last-child {
+    .timeline-item-content-desc {
         font-size: 5vw;
     }
 
