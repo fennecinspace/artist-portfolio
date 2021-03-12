@@ -1,0 +1,115 @@
+@media only screen and (max-width: 800px) {
+    header {
+        grid-template-columns : 1fr;
+        grid-template-rows: max-content;
+        align-content: center;
+        background-color: #fcc49d;
+    }
+
+    #header-left {
+        height: max-content;
+    }
+
+    #header-left > div:last-child {
+        width: 100%;
+        margin: 0;
+        padding: 0 12vw 80px 12vw;
+        transform: none;
+        top: 0;
+    }
+
+    #header-right {
+        display: none;
+    }
+
+    #main_title {
+        font-size: 15vw;
+        width: 100%;
+
+    }
+
+    .main_underscore {
+        width: 8vw;
+        height: 2.5vw;
+    }
+
+    .main_desc {
+        font-size: 6vw;
+    }
+
+    .social a {
+        width: 10vw;
+        height: 10vw;
+        background-size: 10vw!important;
+    }
+
+    #header-left nav {
+        display: none;
+    }
+
+    .section-head .main_title {
+        font-size: 15vw!important;
+    }
+
+    .section-head img {
+        visibility: hidden;
+    }
+
+    .section-head .main_title div:last-child {
+        width: 10vw!important;
+        height: 3vw!important;
+    }
+
+    #videos {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .see_more, .see_more:visited, .see_more:active {
+        font-size: 8vw;
+    }
+
+    #livres .section-content img {
+        width: 60vw;
+    }
+
+    .timeline-item > img, .timeline-img-filler {
+        display: none;
+    }
+
+    .timeline-item {
+        grid-template-columns: max-content auto;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .timeline-separator > div:first-child {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .timeline-item-title {
+        font-size: 8vw;
+    }
+
+    .timeline-item-content {
+        display: grid;
+        grid-gap: 10px;
+    }
+
+    .timeline-item-content > div:last-child {
+        font-size: 5vw;
+    }
+
+    .timeline-item-content > img {
+        width: 40vw;
+    }
+
+    .section-content {
+        padding: 14vw 7vw;
+    }
+
+    .timeline-item-content img {
+        display: block;
+    }
+}
